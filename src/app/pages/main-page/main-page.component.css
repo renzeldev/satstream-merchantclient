@@ -1,0 +1,155 @@
+.streams-container {
+    max-width: 70%;
+    /* min-width: 620px; */
+}
+.bg-white {
+    background-color: #fff;
+}
+.bg-black {
+    background-color: #000;
+}
+button:hover {
+    opacity: 0.5;
+}
+button:disabled {
+    opacity: 0.2;
+}
+.streams-wrapper {
+    row-gap: 14px;
+    padding: 10px;
+    border-radius: 12px;
+    min-width: 60vw;
+    min-height: 100px;
+    max-height: 480px;
+    overflow-y: auto;
+}
+h1 {
+    font-size: 25px;
+}
+.stream-item {
+    color: white;
+    font-size: 20px;
+    min-height: 36px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 22px;
+}
+.stream-item .description {
+    width: 55%;
+}
+.stream-item .amount-rate {
+    width: 25%;
+}
+.stream-item .status {
+    width: 20%;
+}
+.withdrawal-wrapper {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.spinner {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message {
+    font-size: 30px;
+    color: #00FF00;
+}
+
+
+::-webkit-scrollbar {
+    width: 6px; /* Set the width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set the color of the scrollbar thumb */
+  }
+  
+  /* For Firefox */
+  ::-moz-scrollbar {
+    width: 6px;
+  }
+  
+  ::-moz-scrollbar-thumb {
+    background-color: #888;
+  }
+  
+  /* For Internet Explorer and Edge */
+  ::-ms-scrollbar {
+    width: 6px;
+  }
+  
+  ::-ms-scrollbar-thumb {
+    background-color: #888;
+  }
+
+
+  @media screen and (min-width: 600px) and (max-width: 1100px) {
+    span {
+        font-size: 15px;
+    }
+    .stream-item .description {
+        width: 50%;
+    }
+    .stream-item .amount-rate {
+        /* width: 10%; */
+        width:25%
+    }
+    .stream-item .status {
+        width: 25%;
+    }
+    .stream-item .actions {
+        /* width: 15%; */
+        width:10%;
+    }
+    img {
+        width: 15px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    span {
+        font-size: 15px;
+    }
+    .stream-item {
+        width: 550px;
+    }
+    span {
+        font-size: 15px;
+    }
+    img {
+        width: 15px;
+    }
+    h1 {
+        font-size: 20px !important;
+    }
+    .modal-dialog {
+        margin-right: 10% !important;
+        margin-left: 10% !important;
+    }
+    .button-style {
+        display: flex;
+        flex-direction: column;
+    }
+    .mr-5 {
+        margin-bottom: 20px;
+        margin-right: 0 !important
+    }
+    .stream-item .description {
+        width: 60%;
+    }
+    .stream-item .amount-rate {
+        width: 20%;
+    }
+    .stream-item .status {
+        width: 20%;
+    }
+  }
